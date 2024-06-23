@@ -1,3 +1,10 @@
+/* for legs movements you must use "moveArm" function, with parameters : 
+moveArm(Front leg left - X, Z, Y,/ Rear leg left - X, Z, Y/ Front leg right - X, Z, Y/ Rear leg right - X, Z, Y, Speed ( between 1 to 100, 1 fast 100 very slow)) 
+Please check the github to see the arms map
+https://github.com/Crafitys/ROKI_robot
+*/
+
+
 #include "ROKI.h"
 #include <math.h>
 

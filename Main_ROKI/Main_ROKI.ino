@@ -1,3 +1,7 @@
+/*Roki the robot code! 
+you can add some animation function in ROKI.cpp or modify any movements.
+github of project:  https://github.com/Crafitys/ROKI_robot
+*/
 
 #include "ROKI.h"
 #include <Adafruit_PWMServoDriver.h>
@@ -11,13 +15,14 @@ extern Adafruit_PWMServoDriver myServo;
 #define TRIGGER_PIN_RIGHT 25 
 #define ECHO_PIN_RIGHT 33 
 
-extern int currentAngle[];
+extern int currentAngle[]; //angle current for all servos
 unsigned long distanceLeft = 0;
 unsigned long distanceRight = 0;
 bool isRunning = false;
 
 const char* ssid = "ROKI001"; // Nom du réseau
 const char* password = "ROKI001123456"; // Mot de passe du réseau
+//for ip adress open serial monitor
 WebServer server(80);
 
 #define SERVOMIN 500
